@@ -1,3 +1,4 @@
+import { getEventTimestamp } from './../../config/shared';
 import { EventProcessService } from './../../services/event-process/event-process.service';
 import { CoursePointEvent } from './../../../../core/models/coursepoint-event.model';
 import { DOMEventTypes } from './../../../../core/enums/event-type.enum';
@@ -25,11 +26,12 @@ export class CaptureEventDirective implements OnDestroy {
     if (this.eventType !== eventType) {
       return;
     }
+    const eventTimestamp = getEventTimestamp();
     const data = {
       ...this.data,
-      eventTimestamp: Date.now().toString()
+      eventTimestamp
     };
-    
+
     const subscription = this.eventProcessService.sendData(data).subscribe(
       response => {
         console.log(`Response: `, response);

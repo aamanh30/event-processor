@@ -1,7 +1,9 @@
+import { SharedService } from './../../../shared/services/shared/shared.service';
+import { Router } from '@angular/router';
+import { EventProcessService } from './../../../shared/services/event-process/event-process.service';
 import { ClassService } from './../../../shared/services/class/class.service';
-import { CoursePointEventIds } from './../../../../core/config/event-id.config';
 import { EventPageBase } from './../../../../core/models/event-page.base';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, OnDestroy } from '@angular/core';
 import { OverviewConfig } from '../../config/overview.config';
 
 @Component({
@@ -9,14 +11,29 @@ import { OverviewConfig } from '../../config/overview.config';
   templateUrl: './overview-page.component.html',
   styleUrls: ['./overview-page.component.scss']
 })
-export class OverviewPageComponent extends EventPageBase implements OnInit {
+export class OverviewPageComponent extends EventPageBase implements OnInit, AfterViewInit, OnDestroy {
 
-  constructor(protected classService: ClassService) {
-    super(classService);
-   }
-
+  constructor(
+    protected classService: ClassService,
+    protected eventProcessService: EventProcessService,
+    protected router: Router,
+    protected sharedService: SharedService
+  ) {
+    super(classService, eventProcessService, router);
+  }
+  
   ngOnInit(): void {
-    this.setEventId(CoursePointEventIds.overviewPage);
+    const id = this.sharedService.getOverviewPageEventId();
+    this.setEventId(id);
+    this.setPageData(OverviewConfig);
+  }
+
+  ngAfterViewInit(): void {
+    this.capturePageViewStartEvent();
+  } 
+  
+  ngOnDestroy(): void {
+    this.capturePageViewEndEvent();
   }
 
   getOverviewButtonData() {

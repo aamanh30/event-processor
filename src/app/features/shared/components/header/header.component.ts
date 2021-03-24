@@ -1,3 +1,4 @@
+import { RouteSlug } from './../../../../core/enums/route-slug.enum';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -14,7 +15,8 @@ export class HeaderComponent implements OnInit {
   }
 
   initNavItems(): void {
-    const navlist = ['assignments', 'classes', 'content', 'dashboard', 'gradebook', 'overview', 'results', 'roster'];
+    // const navlist = ['assignments', 'classes', 'content', 'dashboard', 'gradebook', 'overview', 'results', 'roster'];
+    const navlist = [ RouteSlug.content, RouteSlug.assignments, RouteSlug.results];
     const navItems = navlist.map(
       navItem => ({
         label: navItem,

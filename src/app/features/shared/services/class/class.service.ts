@@ -21,7 +21,6 @@ export class ClassService {
 
   setEventId(eventId: string): void {
     this.eventId = eventId;
-    console.log(`eventId:` ,eventId);
   }
 
   getEventId(): string {

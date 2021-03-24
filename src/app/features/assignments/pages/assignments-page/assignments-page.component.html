@@ -1,9 +1,17 @@
 <h1> Assignments Page</h1>
 
-<button appCaptureEvent [data]="getAssignmentsButtonData()" (click)="onClickHandler($event)">SHOW ASSIGNMENTS</button>
+<br />
 
-<button appCaptureEvent [data]="getAssignmentsButtonData()" (click)="onClickHandler($event)">VIEW DUE ASSIGNMENT</button>
+<button appCaptureEvent [data]="getAssignmentButtonData('Submitted Work(show/hide assignment)')" (click)="onClickHandler($event)">Submitted Work(show/hide assignment)</button>
 
-<button appCaptureEvent [data]="getAssignmentsButtonData()" (click)="onClickHandler($event)">VIEW PAST ASSIGNMENT</button>
+<br />
 
-<button appCaptureEvent [data]="getAssignmentsButtonData()" (click)="onClickHandler($event)">VIEW UPCOMING ASSIGNMENT</button>
+<button appCaptureEvent [data]="getAssignmentButtonData('Load Assignment')" (click)="onClickHandler($event)">Load Assignment</button>
+
+<br />
+
+<button appCaptureEvent [data]="getAssignmentButtonData('Begin Assignment')" (click)="onClickHandler($event)">Begin Assignment</button>
+
+<br />
+
+<button appCaptureEvent [data]="getAssignmentButtonData('View Submission History')" (click)="onClickHandler($event)">View Submission History</button>

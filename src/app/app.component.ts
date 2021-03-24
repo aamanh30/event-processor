@@ -1,3 +1,4 @@
+import { SharedService } from './features/shared/services/shared/shared.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'event-processor';
+
+  constructor(private sharedService: SharedService) {
+    this.sharedService.getEventIds().subscribe();
+  }
 }

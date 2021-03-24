@@ -40,20 +40,21 @@ export class ClassDropdownComponent implements OnInit, OnDestroy {
     this.subscriptions.push(subscription);
   }
 
-  updateSelectedClass(classId: string): void {
+  updateSelectedClass(classId: string, eventName?: string): void {
     this.classService.setClassId(classId);
     const url = this.router.url.substring(1);
-    this.updateConfigData(url);
+    this.updateConfigData(url, eventName);
   }
 
-  updateConfigData(url: string) {
+  updateConfigData(url: string, eventName?: string) {
     const eventId = this.classService.getEventId();
     const classId = this.classService.getClassId();
-    this.data = this.eventProcessService.getEventData(
+    const data = this.eventProcessService.getEventData(
       url,
       classId,
       eventId
     );
+    this.data = { ...data, eventName };
   }
 
   getDropdownData() {

@@ -23,4 +23,17 @@ export const classList = [
 		"id": "3dc71eb7-f062-4d9e-bc0c-424e00bb3e29",
 		"name": "TestMarchNew22",
 	}
-]
+];
+
+export const getEventTimestamp = (): string => {
+	const today = new Date();
+
+	const year = `${today.getFullYear()}`;
+	const month = `${today.getMonth() < 9 ? `0` : ``}${today.getMonth() + 1}`;
+	const date = `${today.getDate() < 10 ? `0` : ``}${today.getDate()}`; 
+	const hours = `${today.getHours() < 10 ? `0` : ``}${today.getHours()}`;
+	const minutes = `${today.getMinutes() < 10 ? `0` : ``}${today.getMinutes()}`;
+	const seconds = `${today.getSeconds() < 10 ? `0` : ``}${today.getSeconds()}`;
+
+	return `${year}-${month}-${date} ${hours}:${minutes}:${seconds}`;
+};

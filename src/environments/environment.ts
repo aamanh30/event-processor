@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: `https://dev01-app.hlrpphoenix.com/`,
-  eventBaseUrl: `https://dev01-app.hlrpphoenix.com/event-service/`
+  baseUrl: `http://dev01-app.hlrpphoenix.com/`,
+  eventBaseUrl: `http://dev01-app.hlrpphoenix.com/capture`
 };
 
 /*
