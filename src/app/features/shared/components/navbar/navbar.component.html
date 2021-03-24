@@ -1,5 +1,7 @@
 <ul class="d-flex">
     <li *ngFor="let navItem of navItems; let i = index;" class="list-item">
-        <a [routerLink]="navItem.routerLink">{{ navItem.label | titlecase }}</a>
+        <a [routerLink]="navItem.routerLink">
+            {{ navItem.label | titlecase }}
+        </a>
     </li>
 </ul>

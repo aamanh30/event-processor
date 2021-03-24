@@ -1,0 +1,36 @@
+.filter-wrapper {
+    padding: 15px;
+    justify-content: flex-end;
+    button {
+        padding: 20px;
+        margin: 0px 15px;
+        &:active, 
+        &:focus {
+            background: #2e822f;
+            color: white;
+        }
+    }
+}
+
+.layout-wrapper {
+    margin: 20px 0px;
+    button {
+        padding: 20px;
+        &:active, 
+        &:focus {
+            background: #2e822f;
+            color: white;
+        }
+    }
+}
+
+.asset-wrapper {
+    button{
+        padding: 20px;
+        &:active, 
+        &:focus {
+            background: #d0027c;
+            color: white;
+        }
+    }
+}

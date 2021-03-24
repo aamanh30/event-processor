@@ -1,19 +1,23 @@
 <h1> Content Page</h1>
 
-<button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Filters</button>
 
-<br />
+<div class="d-flex filter-wrapper">
+    <button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Filters</button>
 
-<button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Find Content by (chapter view)</button>
 
-<br />
 
-<button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Find Content by (Resource type view)</button>
+    <button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Find Content by (chapter view)</button>
+    
+    
+    <button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Find Content by (Resource type view)</button>
+    
+</div>
 
-<br />
+<div class="layout-wrapper">
+    <button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Change layout(list,grid,expand,collapse)</button>    
+</div>
 
-<button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Change layout(list,grid,expand,collapse)</button>
+<div class="asset-wrapper">
+    <button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Asset preview</button>
+</div>
 
-<br />
-
-<button appCaptureEvent [data]="getContentButtonData()" (click)="onClickHandler($event)">Asset preview</button>
