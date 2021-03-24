@@ -1,0 +1,12 @@
+<header>
+    <app-header></app-header>
+</header>
+
+<main>
+    <app-class-dropdown [classes]="classList$ | async"></app-class-dropdown>
+    <router-outlet></router-outlet>
+</main>
+
+<footer>
+    <app-footer></app-footer>
+</footer>

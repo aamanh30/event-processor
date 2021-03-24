@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    --grey-bg: rgba(0,0,0,0.1);
+    margin: 0px 0px;
+    ul {
+        li {
+            list-style: none;
+        }
+    
+    }
+    
+    .d-flex {
+        display: flex;
+    }
+    
+    .justify-content-center {
+        justify-content: center;
+    }
+    
+    .align-items-center {
+        align-items: center;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+    main {
+        max-width: 80vw;
+        margin: 30px auto;
+    } 
+    footer {
+        padding: 50px 0px;
+        background-color: var(--grey-bg);
+    }
+}
