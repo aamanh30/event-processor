@@ -3,7 +3,7 @@ import { studentId, classId, productIsbn, sessionId } from './../../shared/confi
 import { EventType } from './../../../core/enums/event-type.enum';
 import { CoursePointEvent } from './../../../core/models/coursepoint-event.model';
 
-export const eventName = 'Roster Page';
+export const eventName = 'Results Page';
 
 export const ResultsConfig: CoursePointEvent = {
     eventId: '',
