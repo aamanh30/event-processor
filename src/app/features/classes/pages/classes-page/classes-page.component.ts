@@ -41,10 +41,4 @@ export class ClassesPageComponent extends EventPageBase implements OnInit, After
     return formattedData;
   }
 
-//   Content landing page
-// Assignments landing page
-// Results
-// After clicking on class button in class view
-// Preview new dashboard
-
 }

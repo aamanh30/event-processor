@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<ng-container *ngIf="!loaded then loaderTemplate else loadedTemplate"></ng-container>
+
+<ng-template #loaderTemplate>
+    Loading...
+</ng-template>
+
+<ng-template #loadedTemplate>
+    <router-outlet></router-outlet>
+</ng-template>

@@ -1,13 +1,13 @@
 .filter-wrapper {
-    padding: 15px;
-    justify-content: flex-end;
+    padding: 15px 0px;
+    // justify-content: flex-end;
     button {
         padding: 20px;
-        margin: 0px 15px;
+        margin: 0px 30px 0px 0px;
         &:active, 
         &:focus {
-            background: #2e822f;
-            color: white;
+            // background: #2e822f;
+            // color: white;
         }
     }
 }
@@ -18,8 +18,8 @@
         padding: 20px;
         &:active, 
         &:focus {
-            background: #2e822f;
-            color: white;
+            // background: #2e822f;
+            // color: white;
         }
     }
 }
@@ -29,8 +29,8 @@
         padding: 20px;
         &:active, 
         &:focus {
-            background: #d0027c;
-            color: white;
+            // background: #d0027c;
+            // color: white;
         }
     }
 }

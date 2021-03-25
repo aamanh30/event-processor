@@ -7,33 +7,450 @@ export const productIsbn = `9753220091`;
 export const sessionId = `b30283a6`;
 
 export const classList = [
-    {
-		"id": "1e16a565-a949-4d65-b41b-4250007e3363",
-		"name": "vijay 23 march test morning",
-	},
-	{
-		"id": "00bc50f9-f5fc-4f8c-91fc-424f00755ed8",
-		"name": "Dev test - dashboard pbi - 001",
-	},
-	{
-		"id": "4a9906da-0303-42cd-8c81-424e00edae17",
-		"name": "test etl internal demo 22mar2021",
-	},
-	{
-		"id": "3dc71eb7-f062-4d9e-bc0c-424e00bb3e29",
-		"name": "TestMarchNew22",
-	}
+  {
+    name: 'vijay 23 march test morning',
+    id: '1e16a565-a949-4d65-b41b-4250007e3363',
+  },
+  {
+    name: 'Dev test - dashboard pbi - 001',
+    id: '00bc50f9-f5fc-4f8c-91fc-424f00755ed8',
+  },
+  {
+    name: 'test etl internal demo 22mar2021',
+    id: '4a9906da-0303-42cd-8c81-424e00edae17',
+  },
+  { name: 'TestMarchNew22', id: '3dc71eb7-f062-4d9e-bc0c-424e00bb3e29' },
+  { name: 'TestMarch22', id: '38dac02e-60a2-47e4-ae09-424e006acefd' },
+  {
+    name: 'ng test etl job 22mar2021',
+    id: 'e90bfb42-5097-4ccf-921b-424e003998cb',
+  },
+  { name: 'test etl job sunday', id: '05ceac55-e109-47ca-8b75-424d00c0daf0' },
+  { name: 'test vijay 19 march', id: 'fb9bb303-cecf-450c-9e3c-424b0154627b' },
+  { name: 'vijay test march 19', id: 'bd45d554-8606-45b2-ac3d-424b011ff3bf' },
+  { name: 'vijay test 23 march', id: '00d03ad4-73cf-4a4c-9249-424b00e7eb5d' },
+  { name: 'vijay test 22 march', id: '46f702dc-8991-47b6-acc6-424b008668ec' },
+  { name: 'vijay 21 march', id: '10bffb48-0eef-4529-94e2-424b0068f16c' },
+  { name: 'test vijay 20 mar', id: '5ea5ea5c-1a12-4376-9cbb-424b005b5428' },
+  { name: 'vijay test 19mar', id: '43aca83d-847c-40f7-b189-424a011bfde4' },
+  { name: 'vijay test 18 march', id: 'fed5cdc2-1188-4b6f-8302-424a010a0499' },
+  {
+    name: 'Test class for create class event',
+    id: 'd68dcb22-1b61-44c4-9da3-42490099749c',
+  },
+  {
+    name: 'vSim_ClassProductTest_121230',
+    id: '12dff206-6161-4ceb-b3dd-4244008d3013',
+  },
+  {
+    name: 'March12Testclass2_abhi',
+    id: '5a7a2074-1f72-41d2-ad1e-4244008c9ff3',
+  },
+  { name: 'march12_abhi', id: '5dccee0a-8f92-42a5-ab8d-4244008b1cf6' },
+  { name: 'TestVsim_Class_120321', id: '50806e3d-6620-4a1b-b94c-4244008a3f94' },
+  { name: 'TestVsim12March21', id: '8e9a8ee0-d0db-42ac-8148-4244007dc267' },
+  { name: 'test vijay', id: '1d503ea6-c2a0-4c9d-a42e-4243011c15c4' },
+  { name: 'vSim CQA 3-10', id: '5a24dc86-bdb0-434f-a9e6-42420062de75' },
+  { name: 'A1234578', id: 'd6447475-71b7-4dad-80a9-424000fa91a2' },
+  { name: 'TestVsimClass05Mar21', id: '3c6eab47-4cbe-4fb8-b4fa-423d012820d8' },
+  { name: 'vSim Class Name March', id: '634d9cd4-3f3e-4398-9692-423d005ee94b' },
+  { name: 'class 4march', id: 'aa18a794-38e7-40e9-9c8d-423c00a4ef83' },
+  { name: 'vSim Class Name', id: '65e132dc-f0ba-4952-a483-423a0057f873' },
+  { name: 'Today 2feb', id: '94a21201-47b7-422d-8bd0-423a005331a4' },
+  { name: 'test functionality', id: '311b921a-cc20-444e-bca7-42390056deb7' },
+  { name: '26 feb 21', id: '0a92410d-20bd-4744-9889-423600699ef6' },
+  {
+    name: 'Test class for dashboard1 on feb 26',
+    id: '5ad4f19f-322f-4128-ac98-4236004d7ca9',
+  },
+  {
+    name: 'test class 25 feb PR 12',
+    id: '39ffe0b8-b89d-4075-b24a-423500b5240e',
+  },
+  { name: 'test class 25 feb', id: '0fe24aae-963f-4dcf-81f4-423500b1a48c' },
+  { name: '25 feb 21', id: '0f5440ad-d9fd-4f55-be64-423500acbe48' },
+  { name: 'A123456', id: '7d26eb2b-8c78-4a0c-87aa-423400522aa5' },
+  { name: 'Test class 23Feb21', id: '05c3ae38-cdb4-4fc7-ab54-423300cc3dbc' },
+  { name: 'test class 123', id: '3530f2a7-f72a-416d-8b5f-422e0084c5c2' },
+  { name: 'bug fixing', id: 'c0300612-e5fb-4672-8752-422e00848b34' },
+  { name: '111wer3456', id: '0924ca3d-f42d-4f35-9550-422e003b792e' },
+  {
+    name: 'test class on 02/17/2021 ',
+    id: '7b473689-29d6-4040-bd18-422d00e6fdee',
+  },
+  { name: 'TestVsim400', id: 'c011702a-8a0a-4e2a-943b-422500b5b603' },
+  { name: 'TestVsim2423543', id: '2a8047d5-c338-43f7-afd2-422500b0779d' },
+  { name: 'Class test Feb09 321', id: '270c480d-660a-4acb-a87a-422500a24791' },
+  { name: 'Testing vSim Demo', id: '17d4e41a-8df0-447c-a6dd-422500718cc0' },
+  { name: 'test roster  1210', id: '89b728b4-8b0f-4b43-87d8-422400e88678' },
+  { name: 'vSimPresentation', id: '65f7e88d-130d-4ec3-8080-422400e6b4f3' },
+  { name: '67tata', id: 'bd9b3ac8-09b2-4348-96fb-422400de4366' },
+  { name: 'DemoTestClass', id: '95cc4f39-a421-4eb2-bbab-422400c9eb32' },
+  { name: 'abcd123456', id: 'bf40dda5-7f81-4652-a821-422400b8314c' },
+  { name: 'demo12345', id: '4baf200c-e182-44d0-beef-4224009e840b' },
+  { name: 'vsimtest class', id: '7763f9e0-c329-4406-9298-42240094c09c' },
+  {
+    name: 'Test Class 05Feb21 Spring~#$2021##',
+    id: '6343946b-90bb-4896-b1b3-422100e04719',
+  },
+  {
+    name: ' vSim DEmo 05-02-21 18.00 1',
+    id: 'b9d2986a-4bf9-4d4a-b00f-422100cd1a51',
+  },
+  { name: 'ClassTest1101', id: '957857e7-e23a-4b78-bf41-422100b92c33' },
+  { name: 'sprint 4 demo test1', id: 'f6bad2d7-06e1-4d5d-aaf3-4221007f5f7b' },
+  { name: 'test vsim demo ', id: 'abaae1a0-5310-49c1-8943-421a0095867b' },
+  { name: 'Vsim grades issue', id: '3277d58c-cdc8-4969-bae8-421600e00b8c' },
+  { name: 'TestingForRoster', id: '530e2c27-8db5-4e12-b4ae-421200b971cf' },
+  {
+    name: 'test class 20-jan-2020 change',
+    id: '3827963c-515c-49e3-ba95-42120085c809',
+  },
+  {
+    name: 'test class 21-jan-2020',
+    id: '30a77fc6-1f53-4f44-8159-421200835a85',
+  },
+  { name: 'Test9999Jan21', id: 'fa95e1f4-88b3-4062-addc-4212006d00a8' },
+  { name: 'vsimdemo3', id: '1ca28874-e038-4fa3-9dc5-421101029f4d' },
+  { name: 'vsimdemo1', id: '9c41ce83-bd70-4eeb-b617-42110101bd1d' },
+  { name: 'vSimClass', id: 'f070f59a-67d8-408f-a463-421100fc9aca' },
+  { name: 'TestVSim1', id: 'dc1b8bf7-8733-48a4-8499-421100d074d7' },
+  {
+    name: 'test class on 20 January',
+    id: '3854daa6-e286-493b-bf8f-421100bd1f7a',
+  },
+  { name: 'sprint 4 testing', id: '8112db49-9ac6-4161-8a6f-421100bb3992' },
+  {
+    name: 'vsim-standalone-9-25-20',
+    id: '45331762-5e1a-4e49-ad65-4210010739e1',
+  },
+  { name: 'test class on 19 jan', id: '52b40dc2-5061-4f8d-84d4-421000f9e3a2' },
+  { name: 'test vsim demo 12', id: '95763e75-c156-4f4c-99fb-421000f798b0' },
+  { name: 'vsim test demo1', id: '941aa8be-1066-4536-a5ae-421000f2cd2a' },
+  { name: 'vsim sprint 4 demo', id: 'ac075428-2a1e-488a-81fb-421000f18e0e' },
+  { name: 'vsim test demo', id: 'b6fc2065-a061-47ee-82bf-421000ec77ed' },
+  { name: 'test vsim', id: '616ca09a-7e27-4003-a83b-421000eb9121' },
+  { name: 'vsimtest', id: '56d60a22-0f72-4377-8ff9-421000ea9905' },
+  { name: 'vSim test', id: '9e67de1f-08c2-4ab6-be2b-421000e89db5' },
+  {
+    name: 'Test class for prepu grade',
+    id: '2cd34014-add1-4210-a138-420900acda53',
+  },
+  {
+    name: 'Test class for prepU on jan 12',
+    id: '0cd12dd0-2ca0-40b6-8184-420900815a24',
+  },
+  { name: 'test roster', id: '405a014c-f3b5-4bd5-b9a3-420800ae21f5' },
+  { name: 'Gradebook Test', id: 'e17a3564-c267-4c0c-ad47-4204007b79fb' },
+  { name: 'test 007 FA I', id: '66ccc140-52da-49ab-b47c-420300d48901' },
+  { name: 'test win 007 FA', id: '94b3ef82-357c-491a-ad42-420300d42527' },
+  { name: 'test win FA 007', id: '8eabe23e-a29c-4c1f-912b-420300d396cc' },
+  { name: 'test win WA i 006', id: '8d5cf783-a31f-4485-9b49-420300d27dda' },
+  { name: 'test win 005 i', id: '5ab91157-fdd6-457b-ab0e-420300d166ca' },
+  { name: 'test win CWA 004', id: 'e5a27171-58e8-460e-a9c2-420300cdbf6b' },
+  { name: 'test win WA 003', id: '00c38344-a413-4e5a-9658-420300cd7c37' },
+  { name: 'test win 002', id: 'd8d69657-ce26-4c2e-9f88-420300cd2262' },
+  { name: 'test win 2021', id: '13da7996-419d-452f-8faf-420300c79057' },
+  { name: 'new class jan2021', id: '6d178f0e-d6f7-49d9-856d-420200c05660' },
+  { name: 'Spring Class 2021', id: '0e94f408-d2f3-4768-9061-42010072b857' },
+  {
+    name: 'Copied Class 22nd December',
+    id: '55255024-d362-4a5c-a5a3-41f400d3504d',
+  },
+  { name: 'test-1', id: '2fb623e0-15d5-480a-a5de-41f300c72165' },
+  { name: 'pendo class event', id: '78f6744d-2b59-4fff-84e8-41ee00d240aa' },
+  { name: 'test asset launcher', id: 'c53680ff-7a6c-4a40-89c8-41ee0085e92a' },
+  { name: 'test class sprint', id: '8e952f19-475d-419d-ac94-41ed007f788f' },
+  {
+    name: 'Automated_Test_Class_1607686360833',
+    id: 'f1c1d4f2-c6c9-4f36-a145-41e900be56db',
+  },
+  {
+    name: 'Automated_Test_Class_1607686334716',
+    id: '14337bf8-3bde-4d68-b96c-41e900be380d',
+  },
+  {
+    name: 'Automated_Test_Class_1607682145897',
+    id: '6b46ecce-e8c8-43e2-b573-41e900ab2943',
+  },
+  {
+    name: 'Automated_Test_Class_1607682056904',
+    id: 'c4b5c743-89ce-4f56-96e4-41e900aaa9a9',
+  },
+  {
+    name: 'Automated_Test_Class_1607681904778',
+    id: '3078d746-36d3-4b5e-bc00-41e900a9f9d4',
+  },
+  { name: 'CS4049', id: 'b38fb70f-eef5-468f-bae3-41e900a5d9f6' },
+  { name: 'CS404', id: 'b8a75fa7-d1e3-45b1-8e19-41e9008d47db' },
+  { name: 'vsim test 11-12', id: 'de1ec768-30db-4583-a97a-41e9008d2d88' },
+  { name: 'Test vsim content', id: '00ca0593-e28e-4586-81b4-41e9003ba527' },
+  { name: 'Vsim Asset Details', id: '645fd37a-5e2d-427a-ab2f-41e8007eacd6' },
+  { name: 'TestDec9', id: 'c11eab83-19f0-459d-ab49-41e700aafbb3' },
+  { name: 'Testing', id: '2471c1bd-a84d-4b2e-aabc-41e7006d67b0' },
+  { name: 'Test Class', id: '24902dfa-298f-4141-95e8-41e7006c62da' },
+  { name: 'New class created', id: 'cf787054-129f-4270-80db-41e7005c1fff' },
+  {
+    name: 'Testing for assign batch assignment',
+    id: '5adbf011-3cf9-4339-ba40-41e7005b68f7',
+  },
+  {
+    name: 'Testing for Copy Assignment',
+    id: '76c8b46d-58ba-4b6e-a0ff-41e601053a2f',
+  },
+  { name: 'Testing Demo ', id: '63e9a7ed-cce3-4b1a-af58-41e600f2c7ec' },
+  { name: 'Test for Demo ', id: '084ca6af-d72f-4dd4-894b-41e600f21db0' },
+  { name: 'ASSIGN TEST', id: 'a2be3fac-b5a3-4b4c-b799-41e600d5d972' },
+  { name: 'test class aiignment', id: '61492f77-9c2b-4f9a-9604-41e600ca238a' },
+  { name: 'TESt SFJASLFJA', id: '6c63c1d5-a5ac-4e1d-8d9e-41e600bfecd4' },
+  {
+    name: 'test class for assignment',
+    id: '7560c5db-a005-41a4-a82d-41e600af1b46',
+  },
+  { name: 'Class For Testing', id: '5a93c806-0083-4e50-9321-41e6007a586b' },
+  { name: 'Test test', id: '7efe8602-2d4b-4d54-9247-41e6006b8a38' },
+  { name: 'Amit test', id: '1e701d9c-2412-4499-91df-41e500c12cba' },
+  {
+    name: 'vsim assignment testing canges',
+    id: 'e0c94b70-b3cd-4626-8b06-41e50079cc75',
+  },
+  {
+    name: 'vsim assignment test class',
+    id: 'f47465e3-eaab-4144-ad69-41e50063e949',
+  },
+  { name: 'test vsim class new', id: '05afec21-14da-405c-975a-41e200a97be2' },
+  { name: 'test3211', id: 'a6adf0c9-4572-421e-87bf-41e20095e1ab' },
+  { name: 'vSim demo4', id: '32921fdc-2a81-4f53-aa42-41e200956f98' },
+  { name: 'Vsim Testdemo', id: 'e5af8285-2780-492c-84ad-41e20094b63f' },
+  { name: 'qatesing for winter', id: '3a4d08ee-804a-4701-b040-41e2009337ff' },
+  { name: 'qatesing for winter', id: '5f5dd205-ec96-4a8b-b5ac-41e200931a59' },
+  { name: 'qatesing for winter', id: '29c26e49-4748-4901-90cd-41e20092fa48' },
+  { name: 'qatesing for winter', id: '85720cde-70ea-4469-bdf4-41e20092d7d3' },
+  { name: 'qa test', id: 'de780acc-e18d-4cac-b492-41e200914fc6' },
+  { name: 'vSim Demo', id: '52661bb2-63d5-45e9-98e2-41e100f7f48f' },
+  { name: 'vSim Demo 04-12-20', id: '602b16e7-18f2-48fc-bfec-41e100873ef3' },
+  { name: 'test class for skills', id: 'bf068d56-fa3c-4643-829d-41e1007bb442' },
+  { name: 'new class for skills', id: '85310baf-8375-492d-a0a0-41e000dc868b' },
+  {
+    name: "don't use this class for assignment create",
+    id: '4c7c7f66-e983-45ce-a0e0-41e000da347a',
+  },
+  { name: 'new class 1234567', id: '72a5beb3-4f09-4341-b2f1-41e000cd173f' },
+  { name: 'new class 12345', id: 'c8c3a8f5-b695-49e3-a8b3-41e000c9fc12' },
+  {
+    name: 'test new new assignment',
+    id: '03c3c422-828a-4b74-96c3-41e000b31873',
+  },
+  { name: 'new class 1234', id: 'f3b1c7b6-57da-48d0-8951-41e00096bbdf' },
+  { name: 'new class list copy1', id: '346bd92f-b635-4fdf-b96f-41df00da5076' },
+  { name: 'new class list', id: 'd1313c91-aced-4efe-a629-41df00d542fe' },
+  { name: 'new copy class', id: '41b121bc-68ea-4a0a-a6da-41df00b773f4' },
+  {
+    name: 'test assignment list 112',
+    id: '9186b83f-bbd8-4fe9-afd2-41de00e1d5ad',
+  },
+  { name: 'test assignment list', id: 'f9f007ba-5e48-42f7-a831-41de00e0a346' },
+  { name: 'test class 1234', id: '6bb4cf41-9fb0-48b4-ac32-41de005d9f19' },
+  { name: 'Vsim Content', id: '4ab4be2c-9a15-40bb-a272-41dd00b4f35c' },
+  {
+    name: 'testing vsim assignment',
+    id: 'a71abd18-9be1-4538-aa35-41db00b93908',
+  },
+  { name: 'new class 123411', id: 'dd09cf6a-9942-413b-967c-41da011d6712' },
+  { name: 'new class 27', id: '186315f3-b8ca-4277-be61-41d90107f5b1' },
+  { name: 'new class 12', id: '4ab1daa4-c9dd-410f-bf5b-41d900db109f' },
+  { name: 'ClassName 1210', id: 'ca002274-1066-4f36-a31e-41d7006e1cf2' },
+  { name: 'Unassign test', id: 'fb845f4b-6952-453e-bc5a-41d200a26269' },
+  { name: 'test class 2', id: '982ded1e-345b-4726-b794-41d10080479a' },
+  { name: 'test class 17', id: 'edcfe1ef-2cd2-418d-92f4-41d10073fa67' },
+  { name: 'new class 123', id: 'bd34d001-eefe-49b7-b0e7-41d1007109ba' },
+  { name: 'class 17-11-20', id: '79b34d67-1504-4d6b-a955-41d1006a91fc' },
+  { name: 'class 13-11-20 - 1', id: '0a6681a0-f05d-40b1-a577-41cd00a7d12f' },
+  { name: 'class 11/11/20-3', id: 'febbb3c5-4908-425a-a8fd-41cb009a358c' },
+  { name: 'class 11/11/20-2', id: '696439f5-904c-45bd-980c-41cb009801a3' },
+  { name: 'Class 11/11/20', id: '7fa4936e-d8fa-482f-8c4f-41cb00582943' },
+  { name: 'Class test 01', id: 'c64c814b-e36c-4729-be15-41ca00e04475' },
+  { name: 'Today 10 nov', id: '72840a9b-5e64-4454-93ed-41ca00710819' },
+  { name: 'today 9 nov', id: '61c3b5b1-49bb-4ff8-a1ef-41c90072bf73' },
+  {
+    name: 'Future class starts on Nov 20 ',
+    id: '4ab2a8ea-f6dc-4a39-bde4-41c600cb7899',
+  },
+  { name: 'new class 13', id: '98e82553-c99f-4a88-815a-41c60069e0e5' },
+  { name: 'class', id: '7484de7c-d180-4a74-8d98-41c60060c529' },
+  { name: 'class 1-5', id: '7a8e5d08-cea1-4c11-95b4-41c501001277' },
+  { name: 'class 1-4', id: '1df6dfdd-8c82-4e17-bbc9-41c500ffeda6' },
+  { name: 'class 1-3', id: 'e58a37ea-84fd-4dd7-81d7-41c500ffc949' },
+  { name: 'class 1-2', id: 'ceba1e30-ddae-48fe-b1c5-41c500ffa73b' },
+  { name: 'test', id: 'd853cb4e-cbd5-443f-82b2-41c500fd0759' },
+  { name: 'class 12', id: 'df07f73e-8994-475b-a1c3-41c500fbb8d4' },
+  { name: 'new class 3', id: '6ccd36a2-fd0b-4694-973e-41c500f6434d' },
+  { name: 'new test', id: '33442cb8-9a1c-4cd5-bce9-41c500f62309' },
+  { name: 'new class 1', id: 'd8296834-89f3-4f4e-b67e-41c500f600d5' },
+  { name: 'new class', id: 'e56de858-2bf3-4702-9891-41c500f23fea' },
+  { name: 'New class from modal', id: '05ef7b85-3db0-403b-82c9-41c500da27aa' },
+  { name: 'Today 5 nov', id: '83ddddb9-62d8-4398-a6cf-41c5008efd84' },
+  { name: 'Today 4nov A', id: '114d7be7-b2a7-418e-888f-41c400aaba5c' },
+  { name: 'Today 4 nov', id: '07df2e92-33c9-43cd-add0-41c40092c5ed' },
+  { name: 'Test Dev 03Oct2020', id: 'f20157cc-37a0-4f8d-b28b-41c300b4ef5c' },
+  { name: 'dev test oct-nov', id: '9e13601a-74cf-4d18-8ad9-41bc00c0e3aa' },
+  {
+    name: 'Test class for CNA test program 12345',
+    id: 'cb82745d-d792-4b75-8c47-41b400ad5dde',
+  },
+  {
+    name: 'Test class for CNA test program 1234',
+    id: 'f2c7907f-f3af-4852-9f71-41b400ad4cc1',
+  },
+  {
+    name: 'Test class for CNA test program 123',
+    id: '20e67114-323e-4cda-b160-41b400ad3c9f',
+  },
+  {
+    name: 'Test class for CNA test program',
+    id: '61c0c448-0b19-4b0b-8146-41b400ad0e21',
+  },
+  { name: 'Test dev 19Oct2020', id: '64244c3e-92c8-4f1c-85b2-41b4009b4838' },
+  {
+    name: 'Test dev class 16October2020',
+    id: 'c2b610b8-2583-4114-9f6d-41b100f2dffa',
+  },
+  {
+    name: 'Test class for prepU on oct 13',
+    id: 'a8ffe770-1352-4619-906a-41ae00e9dda3',
+  },
+  { name: 'Today 13oct', id: 'c90a67ce-5e7f-43c2-920d-41ae00a5199e' },
+  { name: 'today 12 oct', id: 'd0f9e1b4-1c75-4eed-844b-41ad00c1f9c7' },
+  {
+    name: 'Dev test - do not touch 09October2020',
+    id: 'e3ec4b82-96c6-46f5-aaf7-41aa0068a028',
+  },
+  { name: 'Test class on oct 8', id: '0f06812c-2cbe-4430-9b07-41a9005846ed' },
+  {
+    name: "Dev Test For Vsim-Don't use 7/10/20",
+    id: '3e9f1431-5fdd-4ef0-aebd-41a800d528f4',
+  },
+  {
+    name: 'Dev test - Do not touch 07Oct2020',
+    id: '341ec75d-60e4-4b16-8300-41a800ca41a3',
+  },
+  {
+    name: 'TestPrepU class 05Oct2020',
+    id: '85d02883-8ee7-4d5a-a239-41a60096a9e8',
+  },
+  {
+    name: 'TestPrepu Calss 06Oct20',
+    id: '6269fd8a-0f37-48b5-8abd-41a6006d25ce',
+  },
+  { name: 'sadsa', id: '5028d789-76e2-482d-b04b-41a100bdf827' },
+  { name: 'Class-Sep-2020', id: 'e5a2e3c5-4b25-4dd2-8184-419f0099ce5a' },
+  {
+    name: 'Test Class GPM auto submit 25Sept2020',
+    id: 'a3dd9202-df5a-40fd-992f-419c00e45c33',
+  },
+  {
+    name: 'Test GPM grade process flow 25Sept2020',
+    id: '25e74948-1398-4de0-87fc-419c00c89bc2',
+  },
+  { name: 'Test class creation ', id: 'fcda6039-095b-4e13-8433-419b00cd95f2' },
+  {
+    name: 'Test class for ccm 1234 test12',
+    id: '1bbe7f15-5be4-4140-a863-419b00cb4973',
+  },
+  {
+    name: 'Test class for ccm 1234 test1',
+    id: '937f72fd-3426-4f25-ba40-419b00c7515d',
+  },
+  {
+    name: 'Test class for ccm 1234 test',
+    id: '3fe7983f-eb7e-4cd4-b3ee-419b00bb5e65',
+  },
+  {
+    name: 'Test class for ccm 1234 test',
+    id: '3a0be928-f62e-401e-9ef1-419b00baa300',
+  },
+  {
+    name: 'Test class for ccm test 13123',
+    id: '45e0a4e2-b5c0-401a-acbd-419b0096da9e',
+  },
+  {
+    name: 'Test class for ccm test 13123',
+    id: '90cb6d30-98b7-4b74-be61-419b00968836',
+  },
+  {
+    name: 'Test class for ccm test 1312',
+    id: 'dd54031f-12cb-4f12-9aa4-419b00967a93',
+  },
+  {
+    name: 'Test class for ccm test 131',
+    id: '3d78573f-b842-4345-a216-419b00875167',
+  },
+  {
+    name: 'Test class for ccm test 13',
+    id: 'f9ea972e-4a7c-4b38-afab-419b00874475',
+  },
+  {
+    name: 'Test class for ccm test',
+    id: 'f7868703-696f-4072-84fb-419b0076d60f',
+  },
+  { name: 'Test class for ccm', id: '50019c0e-fbcf-45b1-9840-419b00769df0' },
+  {
+    name: 'Test class for CNA test program',
+    id: '8a476641-50bc-4eac-80ad-419b0076419c',
+  },
+  { name: 'Test Class 16Sept20', id: '49657854-105d-4038-8916-419300669560' },
+  { name: 'class test', id: '29e0b294-e2b4-41fc-8618-419100e40d22' },
+  { name: 'submission history', id: 'c7be967b-6cf0-45e4-bd41-418e00e9ed5d' },
+  { name: 'Test class prepU ', id: '51799f13-71e4-4f81-a42e-418e00a7a1b2' },
+  {
+    name: 'test class 11 sept 2020',
+    id: '78c6e168-3dca-4dd4-89b4-418e00569c39',
+  },
+  {
+    name: 'Test class for assignment on 3rd sep',
+    id: '16c395eb-40a8-4927-bc20-41860084bdca',
+  },
+  {
+    name: 'Test Batch Assignment 01Sept2020',
+    id: '9929d8dc-269b-4f9d-a942-41840075641b',
+  },
+  {
+    name: 'Dev test dont use enjoy',
+    id: '2f5be47b-abe7-40ae-92e7-41800074d9b4',
+  },
+  { name: 'new class 10', id: '7f29136b-01c9-477c-bf7b-416e008f9758' },
+  {
+    name: 'Test QC deleted assignment 03Aug2020',
+    id: '150836e8-c5a6-4542-b50d-416700bc052c',
+  },
+  {
+    name: 'Test Submissions cleanup',
+    id: '5aacf636-3dbf-4711-b971-416200eb10cc',
+  },
+  {
+    name: 'Test PrepU grades scrub',
+    id: 'c40a757b-1356-4e29-ba12-41600079662c',
+  },
+  {
+    name: 'Test class for MSN test program',
+    id: '465b8220-40f8-4dd2-90f3-41560065b2ac',
+  },
+  {
+    name: 'Test class for BSN program type',
+    id: '4b10d819-0218-4673-8a36-41560061ae9c',
+  },
+  { name: 'Test vSim class', id: '6a786ec9-1960-41d9-9e35-415500f5927e' },
 ];
 
 export const getEventTimestamp = (): string => {
-	const today = new Date();
+  const today = new Date();
 
-	const year = `${today.getFullYear()}`;
-	const month = `${today.getMonth() < 9 ? `0` : ``}${today.getMonth() + 1}`;
-	const date = `${today.getDate() < 10 ? `0` : ``}${today.getDate()}`; 
-	const hours = `${today.getHours() < 10 ? `0` : ``}${today.getHours()}`;
-	const minutes = `${today.getMinutes() < 10 ? `0` : ``}${today.getMinutes()}`;
-	const seconds = `${today.getSeconds() < 10 ? `0` : ``}${today.getSeconds()}`;
+  const year = `${today.getFullYear()}`;
+  const month = `${today.getMonth() < 9 ? `0` : ``}${today.getMonth() + 1}`;
+  const date = `${today.getDate() < 10 ? `0` : ``}${today.getDate()}`;
+  const hours = `${today.getHours() < 10 ? `0` : ``}${today.getHours()}`;
+  const minutes = `${today.getMinutes() < 10 ? `0` : ``}${today.getMinutes()}`;
+  const seconds = `${today.getSeconds() < 10 ? `0` : ``}${today.getSeconds()}`;
 
-	return `${year}-${month}-${date} ${hours}:${minutes}:${seconds}`;
+  return `${year}-${month}-${date} ${hours}:${minutes}:${seconds}`;
 };

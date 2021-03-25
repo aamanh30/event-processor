@@ -1,22 +1,21 @@
+import { HttpClient } from '@angular/common/http';
 import { CoursePointEventIds as CoursePointEventIdsModel } from './../../../../core/models/coursepoint-event.model';
-import { CoursePointEventIds } from './../../../../core/config/event-id.config';
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
   private eventIds: CoursePointEventIdsModel;
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getEventIds() {
-    return of(CoursePointEventIds).pipe(
-      switchMap(
-        data => {
+    return this.http.get('../../../../../assets/events.json').pipe(
+      map(
+        ({ data }: any) => {
           this.eventIds = data;
-          console.log(data);
           return of(null); 
       })
     );

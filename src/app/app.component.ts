@@ -7,9 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'event-processor';
+  loaded: boolean = false;
 
   constructor(private sharedService: SharedService) {
-    this.sharedService.getEventIds().subscribe();
+    this.sharedService.getEventIds().subscribe(
+      res => {
+        this.loaded = true;
+      },
+      err => {
+        this.loaded = false;  
+      }
+    );
   }
 }

@@ -1,5 +1,5 @@
 <div class="class-wrapper">
-    <label for="classes-dropdown">Classes</label>
+    <label>Classes</label>
     <select id="classes-dropdown" appCaptureEvent [data]="getDropdownData()" (change)="updateSelectedClass($event.target.value, 'Class Select From Class Dropdown')">
         <option *ngFor="let class of classes;" [value]="class.id">{{ class.name | titlecase }}</option>
     </select>
