@@ -25,6 +25,7 @@ import { ClassesPageComponent } from './features/classes/pages/classes-page/clas
 import { ClassDropdownComponent } from './features/shared/components/class-dropdown/class-dropdown.component';
 import { LoginComponent } from './features/auth/pages/login/login.component';
 import { CookieModule } from 'ngx-cookie';
+import { PagesComponent } from './features/test/pages/pages.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { CookieModule } from 'ngx-cookie';
     RosterPageComponent,
     ClassesPageComponent,
     ClassDropdownComponent,
-    LoginComponent
+    LoginComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,

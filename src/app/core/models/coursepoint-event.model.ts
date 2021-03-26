@@ -12,6 +12,7 @@ export interface CoursePointEvent {
     eventTimestamp: string;
     sessionId: string;
     timeSpent?: number;
+    eventDate?: string;
 }
 
 export interface CoursePointEventIds {

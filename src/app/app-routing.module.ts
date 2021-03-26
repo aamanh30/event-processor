@@ -9,6 +9,7 @@ import { ClassesPageComponent } from './features/classes/pages/classes-page/clas
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainLayoutComponent } from './features/shared/components/main-layout/main-layout.component';
+import { PagesComponent } from './features/test/pages/pages.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
         component: RosterPageComponent
       },
       {
+        path: 'test',
+        component: PagesComponent
+      },
+      {
         path: '',
         redirectTo: 'content',
         pathMatch: 'full'
@@ -69,4 +74,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

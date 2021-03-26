@@ -6,7 +6,7 @@ import { RouteSlug } from './../../../../core/enums/route-slug.enum';
 import { environment } from './../../../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { AssignmentsConfig } from 'src/app/features/assignments/config/assignments.config';
 import { RosterConfig } from 'src/app/features/roster/config/roster.config';
 import { ResultsConfig } from 'src/app/features/results/config/results.config';
@@ -69,11 +69,14 @@ export class EventProcessService {
   }
 
   sendData(data: CoursePointEvent): Observable<any> {
+    const eventDate = `${data.eventTimestamp.substring(0, 10).split('-').join('/')}/${new Date().getHours()}`;
     const eventData = {
       ...data,
-      messageId: getMessageId()
+      messageId: getMessageId(),
+      eventDate 
     };
 
-    return this.http.post(`${environment.eventBaseUrl}`, eventData);
-  }
+    // return this.http.post(`${environment.eventBaseUrl}`, eventData);
+     return of(eventData);
+}
 }

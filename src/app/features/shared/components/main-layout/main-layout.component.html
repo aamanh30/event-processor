@@ -4,7 +4,8 @@
 
 <main>
     <app-class-dropdown [classes]="classList$ | async"></app-class-dropdown>
-    <router-outlet></router-outlet>
+    <!-- <router-outlet></router-outlet> -->
+    <app-pages [classes]="classList$ | async" [students]="studentIds"></app-pages>
 </main>
 
 <footer>
